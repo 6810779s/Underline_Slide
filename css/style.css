@@ -1,0 +1,48 @@
+#menual{
+  width: 100%;
+  height:650px;
+  padding-left: 400px;
+  margin-top: 50px;
+}
+
+#menual .main_tit{
+  font-size: 2em;
+  padding-bottom: 30px;
+}
+
+#menual .main_content{
+  font-size: 2em;
+  line-height: 1.6;
+  color: rgb(192,192,192);
+}
+
+.first:hover, .second:hover, .third:hover, .fourth:hover, .fifth:hover{
+  color: black;
+}
+
+.highlight{
+  display: inline-table; /*highlight::before과 겹치게 해줌*/
+  position: relative;
+  /* overflow: hidden; */
+}
+
+.highlight::before{
+  content:'';
+  width: 100%;
+  height: 100%;
+  background: rgba(236, 98, 78);
+  position: absolute;
+  top: 40px;
+  left: -100%;
+  transition: all .35s;
+
+}
+
+.have_highlight:hover .highlight::before{
+  left: 0;
+
+}
+
+#menual strong{
+  color: black;
+}
