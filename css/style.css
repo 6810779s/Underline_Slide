@@ -23,7 +23,7 @@
 .highlight{
   display: inline-table; /*highlight::before과 겹치게 해줌*/
   position: relative;
-  /* overflow: hidden; */
+  overflow: hidden;
 }
 
 .highlight::before{
